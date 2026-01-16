@@ -91,12 +91,14 @@ body{
     color: white;
     padding: 10px;
     border-radius: 40px;
+    cursor: pointer;
     
 }
 
 .cat p:hover{
+    transition: 1s;
     background-color: white;
-    color: black;
+    color:#9E3AE7;
     border: solid black 1px;
 }
 
@@ -108,6 +110,8 @@ body{
 .Sales-img img{
     width: 100%;
 }
+
+
 .sales-img-off{
     width: fit-content;
     border: solid black 2px;
@@ -115,6 +119,23 @@ body{
     position:absolute;
     top: 25%;
     left: 10%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity:0 ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom{
+    0%{
+        transform:scale(0);
+        opacity: 0;
+
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+
+    }
 }
 
 
